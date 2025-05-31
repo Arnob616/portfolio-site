@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Arnob Bokshi | Portfolio',
-  description: 'Software Developer with expertise in Data Structure and Algorithms, Web Development',
+  description: 'Competitive programmer expertise in Data structure and algorithm and web development',
 };
 
 export default function RootLayout({

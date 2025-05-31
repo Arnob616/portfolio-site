@@ -47,11 +47,6 @@ const About = () => {
             </div>
             
             <div className="bg-card shadow-sm border border-border rounded-lg p-6 flex flex-col items-center justify-center w-36 h-36">
-              <p className="text-3xl font-bold text-primary">3+</p>
-              <p className="text-sm text-muted-foreground text-center">Years Experience</p>
-            </div>
-            
-            <div className="bg-card shadow-sm border border-border rounded-lg p-6 flex flex-col items-center justify-center w-36 h-36">
               <p className="text-3xl font-bold text-primary">10+</p>
               <p className="text-sm text-muted-foreground text-center">Projects Completed</p>
             </div>

@@ -16,22 +16,22 @@ type Platform = {
 const platforms: Platform[] = [
   {
     name: "LeetCode",
-    url: "https://leetcode.com/arnob1115/",
-    username: "arnob1115",
+    url: "https://leetcode.com/arnob1111/",
+    username: "arnob1111",
     icon: <Code className="w-8 h-8" />,
     className: "bg-[#FFA116]/10 border-[#FFA116]/30 hover:bg-[#FFA116]/20 text-[#FFA116]",
   },
   {
     name: "GeeksForGeeks",
-    url: "https://geeksforgeeks.org/arno67rd/",
-    username: "arno67rd",
+    url: "https://www.geeksforgeeks.org/user/ararno47m4/",
+    username: "ararno47m4",
     icon: <Bookmark className="w-8 h-8" />,
     className: "bg-[#2F8D46]/10 border-[#2F8D46]/30 hover:bg-[#2F8D46]/20 text-[#2F8D46]",
   },
   {
     name: "CodeForces",
-    url: "https://codeforces.com/Arnobkashi/",
-    username: "Arnobkashi",
+    url: "https://codeforces.com/ArnobBokshi/",
+    username: "ArnobBokshi",
     icon: <Award className="w-8 h-8" />,
     className: "bg-[#1F8ACB]/10 border-[#1F8ACB]/30 hover:bg-[#1F8ACB]/20 text-[#1F8ACB]",
   },

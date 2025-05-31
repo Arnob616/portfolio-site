@@ -59,7 +59,7 @@ const Hero = () => {
             className="text-xl text-muted-foreground mb-6"
             variants={itemVariants}
           >
-            Software Developer with expertise in Data Structure, Algorithms, and Web Development
+            Competitive programmar with expertise in Data Structure & Algorithms, Web Development and foundational knowledge in AI/ML. 
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-4 mb-8"
@@ -90,7 +90,7 @@ const Hero = () => {
               <Mail className="h-5 w-5" />
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/arnob1001"
               className="p-2 rounded-full bg-secondary/50 hover:bg-secondary/80 transition-colors"
               aria-label="GitHub"
             >

@@ -56,7 +56,13 @@ const Header = () => {
             </Link>
           ))}
           <ThemeToggle />
-          <Button className="rounded-full">Resume</Button>
+              
+          <Button className="rounded-full">
+            <a
+          href="https://drive.google.com/file/d/1-0UOf47zZPoZzzVnuukuZune6RjjKZP8/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>Resume</Button>
         </nav>
 
         {/* Mobile Navigation */}
