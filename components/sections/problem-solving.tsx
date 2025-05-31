@@ -16,8 +16,8 @@ type Platform = {
 const platforms: Platform[] = [
   {
     name: "LeetCode",
-    url: "https://leetcode.com/arnob1111/",
-    username: "arnob1111",
+    url: "https://leetcode.com/arnob141/",
+    username: "arnob141",
     icon: <Code className="w-8 h-8" />,
     className: "bg-[#FFA116]/10 border-[#FFA116]/30 hover:bg-[#FFA116]/20 text-[#FFA116]",
   },
