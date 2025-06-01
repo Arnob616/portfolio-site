@@ -76,6 +76,26 @@ const projects: Project[] = [
     borderColor: "border-teal-400/30",
     gradient: "from-teal-500 to-teal-600"
   },
+   {
+    title: "DocuMind",
+    subtitle: "AI powered Knowledgebase",
+    description: [
+      "Complete document CRUD with Markdown editor",
+      "C++ search engine with fuzzy matching & relevance ranking",
+      "PDF text extraction and indexing",
+      "Live search with instant results",
+"Tag-based organization system",
+"Public/private document visibility",
+"API endpoints for documents/search/upload"
+    ],
+    icon: <Layers className="w-6 h-6" />,
+    technologies: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
+    image: "/Screenshot 2025-06-01 141717.png",
+    githubUrl: "https://github.com/arnob1001/KnowledgeBase-Application",
+    accentColor: "text-orange-400",
+    borderColor: "border-orange-400/30",
+    gradient: "from-orange-500 to-orange-600"
+  },
   {
     title: "MediPredict",
     subtitle: "Multi-Disease Diagnostic",
