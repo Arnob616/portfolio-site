@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Mail, Github as GitHub, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,6 +35,18 @@ const Hero = () => {
     },
   };
 
+  // Floating animation for profile image
+  const floatVariants = {
+    float: {
+      y: [0, -15, 0],
+      transition: {
+        duration: 6,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 pb-10">
       <motion.div
@@ -42,6 +55,7 @@ const Hero = () => {
         animate={isVisible ? "visible" : "hidden"}
         variants={containerVariants}
       >
+        {/* Left Column - Text Content */}
         <motion.div variants={itemVariants}>
           <motion.p
             className="text-primary font-medium mb-2"
@@ -59,7 +73,7 @@ const Hero = () => {
             className="text-xl text-muted-foreground mb-6"
             variants={itemVariants}
           >
-            Competitive programmar with expertise in Data Structure & Algorithms, Web Development and foundational knowledge in AI/ML. 
+            Competitive programmer with expertise in Data Structure & Algorithms, Web Development and foundational knowledge in AI/ML. 
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-4 mb-8"
@@ -106,51 +120,72 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div
-          className="hidden lg:block"
+        {/* Right Column - Enhanced Profile Image */}
+        <motion.div 
+          className="flex justify-center"
           variants={itemVariants}
         >
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-2xl transform rotate-3"></div>
-            <div className="relative bg-muted rounded-2xl overflow-hidden border border-border shadow-xl p-8">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-destructive"></div>
-                  <div className="w-3 h-3 rounded-full bg-chart-4"></div>
-                  <div className="w-3 h-3 rounded-full bg-chart-2"></div>
-                </div>
-                <div className="text-sm text-muted-foreground">developer.sh</div>
+          <motion.div 
+            className="relative"
+            animate="float"
+            variants={floatVariants}
+          >
+            {/* Main image container with gradient border */}
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full z-10 overflow-hidden border-4 border-transparent bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 bg-origin-border p-1 shadow-xl">
+              <div className="relative w-full h-full rounded-full overflow-hidden bg-background">
+                <Image
+                  src="/153275698.jpg"
+                  alt="Arnob Bokshi"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
-              <pre className="font-mono text-sm">
-                <code className="text-muted-foreground">
-                  <span className="text-chart-5">const </span>
-                  <span className="text-chart-1">developer</span>
-                  <span className="text-muted-foreground"> = {`{`}</span>
-                  <br />
-                  <span className="text-muted-foreground">  name: </span>
-                  <span className="text-chart-2">'Arnob Bokshi'</span>
-                  <span className="text-muted-foreground">,</span>
-                  <br />
-                  <span className="text-muted-foreground">  skills: [</span>
-                  <span className="text-chart-2">'Algorithm'</span>
-                  <span className="text-muted-foreground">, </span>
-                  <span className="text-chart-2">'Web Development'</span>
-                  <span className="text-muted-foreground">, </span>
-                  <span className="text-chart-2">'ML/AI'</span>
-                  <span className="text-muted-foreground">],</span>
-                  <br />
-                  <span className="text-muted-foreground">  experience: </span>
-                  <span className="text-chart-3">true</span>
-                  <span className="text-muted-foreground">,</span>
-                  <br />
-                  <span className="text-muted-foreground">  passion: </span>
-                  <span className="text-chart-2">'Building Solutions'</span>
-                  <br />
-                  <span className="text-muted-foreground">{`}`};</span>
-                </code>
-              </pre>
             </div>
-          </div>
+
+            {/* Decorative floating elements */}
+            <motion.div 
+              className="absolute -top-6 -right-6 w-16 h-16 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 blur-xl opacity-40 z-0"
+              animate={{
+                y: [0, -15, 0],
+                scale: [1, 1.1, 1]
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+            
+            <motion.div 
+              className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 blur-xl opacity-40 z-0"
+              animate={{
+                y: [0, 15, 0],
+                scale: [1, 1.1, 1]
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.5
+              }}
+            />
+            
+            {/* Animated rings */}
+            <motion.div 
+              className="absolute inset-0 rounded-full border-4 border-blue-500/30 z-0"
+              animate={{
+                scale: [1, 1.2, 1.4],
+                opacity: [1, 0.8, 0]
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeOut"
+              }}
+              style={{ top: '-1rem', left: '-1rem', right: '-1rem', bottom: '-1rem' }}
+            />
+          </motion.div>
         </motion.div>
       </motion.div>
     </section>

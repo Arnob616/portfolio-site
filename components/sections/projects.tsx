@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Github, ExternalLink, ShieldCheck, LineChart, Layers, Activity, ArrowRight, Sparkles, HeartPulse, Brain } from 'lucide-react';
+import { Github, ExternalLink, ShieldCheck, LineChart, Layers, Activity, ArrowRight, Sparkles, HeartPulse, Brain, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -88,7 +88,7 @@ const projects: Project[] = [
 "Public/private document visibility",
 "API endpoints for documents/search/upload"
     ],
-    icon: <Layers className="w-6 h-6" />,
+    icon: <BookOpen className="w-6 h-6" />, // Changed to BookOpen icon
     technologies: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
     image: "/Screenshot 2025-06-01 141717.png",
     githubUrl: "https://github.com/arnob1001/KnowledgeBase-Application",
@@ -282,14 +282,13 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <div className="relative h-64 lg:h-full overflow-hidden bg-muted/20 border-l border-border/50">
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-card/80 z-10"></div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-card/80 to-transparent lg:hidden z-10"></div>
+                  {/* Fixed image container */}
+                  <div className="relative h-64 lg:h-full lg:border-l border-border/50">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover object-left-top transition-all duration-500 group-hover:scale-105"
+                      className="object-cover object-center transition-all duration-500 group-hover:scale-[1.02]"
                       sizes="(max-width: 768px) 100vw, 50vw"
                       priority={index < 2}
                     />
