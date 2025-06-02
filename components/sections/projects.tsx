@@ -25,7 +25,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "CivicSafe",
-    subtitle: "Public Safety Platform",
+    subtitle: "Integrated Public safety and service management system",
     description: [
       "AI-enhanced emergency service system",
       "Real-time incident detection & reporting",
@@ -43,7 +43,7 @@ const projects: Project[] = [
   },
   {
     title: "DetecAI",
-    subtitle: "Computer Vision System",
+    subtitle: "Advanced Object and edge detection application",
     description: [
       "YOLOv8 object detection",
       "Advanced image preprocessing",
@@ -60,7 +60,7 @@ const projects: Project[] = [
   },
   {
     title: "FinanceFlow",
-    subtitle: "AI Financial Dashboard",
+    subtitle: "AI Driven Financial platform",
     description: [
       "Automated expense tracking",
       "Receipt scanning with OCR",
@@ -97,8 +97,8 @@ const projects: Project[] = [
     gradient: "from-orange-500 to-orange-600"
   },
   {
-    title: "MediPredict",
-    subtitle: "Multi-Disease Diagnostic",
+    title: "MediCare",
+    subtitle: "Multiple-Disease prediction platform",
     description: [
       "Parkinson's disease prediction",
       "Heart disease risk analysis",

@@ -55,15 +55,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>arnob1415@gmail.com</span>
+                <span>ararnob1415@gmail.com</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+17256655425</span>
+                <span>+1726655425</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>226 North Justin Piperoad</span>
+                <span>226 North Jurain Piperoad</span>
               </li>
             </ul>
           </div>
