@@ -42,7 +42,7 @@ const projects: Project[] = [
     gradient: "from-emerald-500 to-emerald-600"
   },
   {
-    title: "DetecAI",
+    title: "Objectify",
     subtitle: "Advanced Object and edge detection application",
     description: [
       "YOLOv8 object detection",
@@ -54,6 +54,7 @@ const projects: Project[] = [
     technologies: ["Python", "Streamlit", "OpenCV", "YOLOv8", "PyTorch"],
     image: "/Screenshot 2025-05-26 192852.png",
     githubUrl: "https://github.com/arnob1001/Smart-object-detection-app",
+    liveUrl: "https://objectify.streamlit.app/",
     accentColor: "text-orange-400",
     borderColor: "border-orange-400/30",
     gradient: "from-orange-500 to-orange-600"
