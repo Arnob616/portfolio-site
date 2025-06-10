@@ -101,15 +101,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <MapPin className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">226 North Jurain Piperoad</p>
-                </div>
-              </div>
+           
             </div>
           </motion.div>
 
