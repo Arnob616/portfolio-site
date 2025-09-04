@@ -30,7 +30,7 @@ const About = () => {
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Software developer with a strong foundation in Data Structure and Algorithm. I&apos;ve solved 700+ problems 
+            Software developer with a strong foundation in Data Structure and Algorithm. I&apos;ve solved 500+ problems 
             across coding platforms and developed several web and AI/ML-focused projects. Eager to leverage my technical 
             expertise to solve real-world challenges while continuously learning and growing in a collaborative environment.
           </motion.p>
@@ -42,7 +42,7 @@ const About = () => {
             transition={{ delay: 0.6, duration: 0.6 }}
           >
             <div className="bg-card shadow-sm border border-border rounded-lg p-6 flex flex-col items-center justify-center w-36 h-36">
-              <p className="text-3xl font-bold text-primary">700+</p>
+              <p className="text-3xl font-bold text-primary">500+</p>
               <p className="text-sm text-muted-foreground text-center">Problems Solved</p>
             </div>
             
