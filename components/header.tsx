@@ -93,7 +93,6 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="rounded-full w-full mt-2">Resume</Button>
           </div>
         </div>
       )}

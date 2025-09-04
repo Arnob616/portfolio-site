@@ -104,7 +104,7 @@ const Hero = () => {
               <Mail className="h-5 w-5" />
             </Link>
             <Link
-              href="https://github.com/arnob1001"
+              href="https://github.com/Arnob616"
               className="p-2 rounded-full bg-secondary/50 hover:bg-secondary/80 transition-colors"
               aria-label="GitHub"
             >
